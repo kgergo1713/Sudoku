@@ -255,7 +255,7 @@ def level_handling(direction=None):
 def init():
     global sprite_background, sample, sound_win, sound_click
     global sound_write, level_control, level_char_color
-    sprite_background = spritesheet_loader('../Graph/BG800x749.png', 1, 1)
+    sprite_background = spritesheet_loader('Graph/BG800x749.png', 1, 1)
 
     #sounds
     pg.mixer.init()
