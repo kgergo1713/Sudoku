@@ -1,7 +1,7 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.metrics import dp
-from sudoku_logic import SudokuGame
+import sudoku_logic
 from kivy.uix.boxlayout import BoxLayout
 
 class SudokuCell(BoxLayout):
