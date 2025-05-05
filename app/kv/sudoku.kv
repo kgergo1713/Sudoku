@@ -1,0 +1,21 @@
+<SudokuCell>:
+    size_hint: None, None
+    size: dp(40), dp(40)
+    canvas.before:
+        Color:
+            rgba: 1,1,1,1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Label:
+        id: label
+        text: ""
+        font_size: dp(24)
+        center: self.parent.center
+
+GridLayout:
+    cols: 9
+    rows: 9
+    padding: dp(10)
+    spacing: dp(2)
+    # 81 x <SudokuCell> widgetet fogunk Pythonból hozzáadni, vagy itt manuálisan 81 sort is írhatunk...

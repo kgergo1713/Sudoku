@@ -23,7 +23,7 @@ selected_value = None
 #Graphics figures
 pg.init()
 clock = pg.time.Clock()
-font_obj = pg.font.Font('Graph\\segoepr.ttf', 36)
+font_obj = pg.font.Font('../assets/graph/segoepr.ttf', 36)
 pg.display.set_caption("Sudoku")
 ##icon = pg.image.load("PNG\\logo.png")
 ##pg.display.set_icon(icon)
@@ -255,14 +255,14 @@ def level_handling(direction=None):
 def init():
     global sprite_background, sample, sound_win, sound_click
     global sound_write, level_control, level_char_color
-    sprite_background = spritesheet_loader('Graph/BG800x749.png', 1, 1)
+    sprite_background = spritesheet_loader('../assets/graph/BG800x749.png', 1, 1)
 
     #sounds
     pg.mixer.init()
-    sound_background = pg.mixer.Sound('Sound\\Sound_background.mp3')
-    sound_win = pg.mixer.Sound('Sound\\Sound_win.wav')
-    sound_click = pg.mixer.Sound('Sound\\Sound_click.mp3')
-    sound_write = pg.mixer.Sound('Sound\\Sound_write.mp3')
+    sound_background = pg.mixer.Sound('../assets/sound/Sound_background.mp3')
+    sound_win = pg.mixer.Sound('../assets/sound/Sound_win.wav')
+    sound_click = pg.mixer.Sound('../assets/sound/Sound_click.mp3')
+    sound_write = pg.mixer.Sound('../assets/sound/Sound_write.mp3')
     sound_background.play(-1)
 
     #samples
